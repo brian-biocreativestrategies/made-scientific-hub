@@ -1,8 +1,9 @@
 # CLAUDE.md — Made Scientific
 
-> **Version:** 1.0 | **Last Updated:** March 8, 2026  
+> **Version:** 2.0 | **Last Updated:** March 8, 2026  
 > Route to the right department. Load only what you need.  
-> **Infra plan:** `docs/INFRASTRUCTURE_CONSOLIDATION.md`
+> **Infra plan:** `docs/INFRASTRUCTURE_CONSOLIDATION.md`  
+> **Monday DB:** `gcrsxhrxxinryhdrweyj` — org structure, OKRs, projects
 
 ---
 
@@ -10,18 +11,45 @@
 
 **Made Scientific** — AI-powered commercial intelligence platform for the life sciences industry.  
 **Parent:** BioCreative Strategies (technology & data partner)  
-**Production app:** `madescientificai.com` → `minimal-science-hub` repo → Transfer DB
+**Production app:** `madescientificai.com` → `minimal-science-hub` repo → Transfer DB  
+**Monday workspace:** MADE - 2026 (ID: 13639214)
 
 ---
 
-## Department Routing
+## Department Routing (mirrors Monday.com teams)
 
-| Your Task | Department | Load This |
-|-----------|-----------|-----------|
-| Accounts, campaigns, HeyReach, EmailBison, social, events, news, content | **Commercial Ops** | `departments/commercial-ops/CLAUDE.md` |
-| Data pipelines, enrichment, academic, clinical trials, drugs, knowledge base | **Data Intelligence** | `departments/data-intelligence/CLAUDE.md` |
-| SFDC/HubSpot reporting, demand planning, revenue forecasting, analytics | **Reporting** | `departments/reporting/CLAUDE.md` |
-| Monday.com, OKRs, contracts, data hygiene, internal tools | **Operations** | `departments/operations/CLAUDE.md` |
+| Your Task | Department | Monday Team | Load This |
+|-----------|-----------|-------------|-----------|
+| Strategic OKRs, portfolio, KPIs, governance, roadmap | **Commercial Leadership** | ComLT | `departments/commercial-leadership/CLAUDE.md` |
+| Pipeline, deals, territory (East/West), site visits, inside sales | **Business Development** | ComBD | `departments/business-development/CLAUDE.md` |
+| Proposals, CRM, S&OP, pricing, MADE AI platform | **Commercial Operations** | ComOps | `departments/commercial-operations/CLAUDE.md` |
+| Campaigns, content, social, news, events, brand | **Marketing** | Marketing | `departments/marketing/CLAUDE.md` |
+| Revenue forecasting, capacity management, pricing | **Commercial Development** | ComDev | `departments/commercial-development/CLAUDE.md` |
+| Client experience, strategic partnerships, new services | **Partnerships** | — | `departments/partnerships/CLAUDE.md` |
+| Manufacturing, lab, PAD, TechOps, QA | **Operations** | OPS_* | `departments/operations/CLAUDE.md` |
+| MADE AI, databases, data pipelines, Monday sync, KB | **Infrastructure** | — | `departments/infrastructure/CLAUDE.md` |
+
+---
+
+## Team Roster
+
+| Person | Title | Team(s) | Monday ID |
+|--------|-------|---------|-----------|
+| **Joseph Sinclair** | Head of Commercial | ComLT (owner) | 68333015 |
+| **Dustin Campbell** | Sr. Dir, Commercial Operations | ComLT, ComOps | 69791837 |
+| **Lucy Taylor** | Mgr, Marketing | ComLT, Marketing | 76220564 |
+| **Kyle Bullock** | Mgr, ComDev | ComDev | 80151228 |
+| **Furat Goris** | Sr. Mgr, Tech Eval & Proposals | ComOps | 79257054 |
+| **Kenneth Warrington** | Sr. Mgr, Tech Evaluations | ComOps | 98009454 |
+| **Melody Rajkovich** | ComOps | ComOps | 79257053 |
+| **Adam Haskett** | BD West | ComBD | 74735177 |
+| **Karen Wu** | BD West | ComBD | 81162981 |
+| **Chat De Silva** | BD East | ComBD | 70141778 |
+| **Simona Jusyte** | BD East / Inside Sales | ComBD | 98616430 |
+| **Allison Irrera** | Marketing | Marketing | 73128053 |
+| **Jennie Mainyi** | Marketing | Marketing | 70326915 |
+| **Michelle Ng** | — | — | 94939527 |
+| **Brian Elbert** | BioCreative (admin) | Multi | 97495219 |
 
 ---
 
@@ -114,9 +142,9 @@ All repos are under the `MADE-SCI` GitHub organization.
 
 | Resource | Location |
 |----------|----------|
-| **Windsurf rules** | `.windsurf/rules/` (8 global + 4 department-scoped = 12) |
+| **Windsurf rules** | `.windsurf/rules/` (6 global + 8 department-scoped = 14) |
 | **Windsurf workflows** | `.windsurf/workflows/` (6 slash commands) |
-| **Skills** | `departments/*/skills/` (distributed by department) |
+| **Skills** | `departments/*/skills/` (33 skills across 8 departments) |
 | **Scripts** | `scripts/` (utility scripts) |
 | **Docs** | `docs/` (architecture, onboarding) |
 

@@ -1,19 +1,17 @@
-# Operations — Department Rules
+---
+trigger: department_match
+description: Rules for Operations (PAD + TechOps + QA) department
+globs: ["departments/operations/**"]
+---
 
-> **Globs:** `["departments/operations/**"]`
+# Operations Rules
 
-When working on files in `departments/operations/`, load this department's context:
+**Scope:** Manufacturing, lab operations, quality assurance.
+**Monday Teams:** OPS_PAD (ID: 1335150), OPS_TO (ID: 1335151), OPS_QA/O/C (ID: 1335157)
 
-## Quick Reference
+## Rules
 
-- **Department CLAUDE.md:** `departments/operations/CLAUDE.md`
-- **Scope:** Monday.com, OKRs, contracts, data hygiene, internal tools
-- **Status:** Monday rebuild is Phase 7 — planned but not yet started
-
-## Key Rules
-
-1. **Monday DB is in BioCreative org** (`gcrsxhrxxinryhdrweyj`) — will be rebuilt, not transferred
-2. **Monday API:** GraphQL v2024-10, Workspace ID 13639214
-3. **Contracts DB** (`bexrfaoyhwzhnhzftdhy`) — 71 clients, 84 MSAs
-4. **RFI Library** (`nxkqurlesocrpabdjjal`) — 404 responses, 199 questions
-5. **Data Hygiene** (`kjdizfgqvammgrrhsgho`) — evaluate if still actively used
+1. **Minimal Monday structure** — no project boards or OKR boards for OPS yet.
+2. **Team accounts** (not personal accounts) — PAD, TechOps, Quality each have shared email accounts.
+3. **Manufacturing data** is distinct from commercial data — do not mix with Transfer DB commercial tables.
+4. **Placeholder department** — expand skills and rules as MADE AI grows into manufacturing support.

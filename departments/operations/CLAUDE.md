@@ -1,52 +1,31 @@
-# Operations — Department CLAUDE.md
+# Operations (PAD + TechOps + QA)
 
-> **Scope:** Monday.com, OKRs, team management, contracts, data hygiene, internal tooling
-> **Status:** Phase 7 (Monday Rebuild) is pending — this department will grow as Monday integration is rebuilt
+Manufacturing, lab, and quality operations. Covers Process & Analytical Development (PAD), Technical Operations (TechOps), and Quality Assurance/Operations/Control (QA/O/C).
 
----
+## Monday.com Mapping
 
-## When to Load This
+| Element | Monday Reference |
+|---------|-----------------|
+| **Teams** | OPS_PAD (ID: 1335150), OPS_TO (ID: 1335151), OPS_QA/O/C (ID: 1335157) |
+| **Workspace** | MADE - 2026 (ID: 13639214) |
 
-You are working on operations if the task involves:
-- Monday.com boards, items, updates, or sync
-- OKR tracking (Objectives & Key Results)
-- Team management, user profiles, permissions
-- Contract and agreement management
-- Data hygiene tracking and cleanup
-- Internal process improvement
-- RFI library management
+## Team Accounts
 
----
+| Account | Email | Focus |
+|---------|-------|-------|
+| **PAD Team** | com_pad@madescientific.com | Process & Analytical Development |
+| **TechOps Team** | com_techops@madescientific.com | Technical Operations |
+| **Quality Team** | com_quality@madescientific.com | Quality Assurance/Operations/Control |
 
-## Databases
+## Current State
 
-| DB | Ref | Status | Key Data |
-|----|-----|--------|----------|
-| **Contracts & Agreements** | `bexrfaoyhwzhnhzftdhy` | Active | 71 clients, 84 MSAs |
-| **Data Hygiene Tracking** | `kjdizfgqvammgrrhsgho` | Evaluate usage | 263 issues |
-| **RFI Library** | `nxkqurlesocrpabdjjal` | Active | 404 responses, 199 questions |
-| **KFSHRC Dashboard** | `kazinkoexzjqvfhrtflo` | Reserved | Empty — future development |
-
----
-
-## Monday.com Integration (Phase 7 — Planned)
-
-**Current state:** Old Monday DB (`gcrsxhrxxinryhdrweyj`) in BioCreative org with synced board data (134 boards, 2,110 items). OKR Command Center app exists but will be rebuilt.
-
-**Planned rebuild:**
-1. Design new Monday → Transfer DB sync via n8n
-2. Build OKR features into production app (not separate app)
-3. Clean up Monday boards (delete test boards, merge duplicates)
-
-**Monday API:** GraphQL v2024-10
-**Workspace ID:** 13639214 (MADE - 2026)
-
----
+- No dedicated OKR boards yet
+- No project boards in Monday
+- Manufacturing/lab focused — distinct from commercial operations
+- Skills are placeholder — expand as MADE AI platform grows into ops
 
 ## Skills
 
-| Skill | File | Purpose |
-|-------|------|---------|
-| Monday Integration | `skills/monday_integration.md` | Monday.com API and sync workflows |
-| Contract Management | `skills/contract_management.md` | Agreement tracking and lifecycle |
-| Data Hygiene | `skills/data_hygiene.md` | Data quality monitoring and cleanup |
+| Skill | Triggers |
+|-------|----------|
+| `manufacturing_ops` | PAD, TechOps, QA, manufacturing, lab, quality, batch |

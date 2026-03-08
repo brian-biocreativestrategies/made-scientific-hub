@@ -48,17 +48,21 @@ Type `/prime` in the chat to prime the agent with your current codebase state. T
 made-scientific-hub/
 ├── CLAUDE.md                              # Root brain — read this first
 ├── .windsurf/
-│   ├── rules/                             # 10 Windsurf rules
+│   ├── rules/                             # 14 Windsurf rules (6 global + 8 dept)
 │   │   ├── database.md                    # DB operations rules
 │   │   ├── frontend.md                    # React/TypeScript patterns
 │   │   ├── supabase.md                    # Edge functions, RLS, project IDs
 │   │   ├── debugging.md                   # Bug fix + system evolution
 │   │   ├── planning.md                    # PIV loop, mandate questioning
 │   │   ├── colab.md                       # Notebook safety rules
-│   │   ├── dept-commercial-ops.md         # Commercial ops scope
-│   │   ├── dept-data-intelligence.md      # Data intelligence scope
-│   │   ├── dept-reporting.md              # Reporting scope
-│   │   └── dept-operations.md             # Operations scope
+│   │   ├── dept-commercial-leadership.md  # ComLT scope
+│   │   ├── dept-business-development.md   # ComBD + Inside Sales scope
+│   │   ├── dept-commercial-operations.md  # ComOps scope
+│   │   ├── dept-marketing.md              # Marketing scope
+│   │   ├── dept-commercial-development.md # ComDev scope
+│   │   ├── dept-partnerships.md           # Partnerships scope
+│   │   ├── dept-operations.md             # PAD/TechOps/QA scope
+│   │   └── dept-infrastructure.md         # MADE AI / data scope
 │   └── workflows/                         # 6 slash commands
 │       ├── prime.md                       # /prime — session priming
 │       ├── plan-feature.md                # /plan-feature — structured planning
@@ -66,23 +70,39 @@ made-scientific-hub/
 │       ├── commit.md                      # /commit — structured commits
 │       ├── import-data.md                 # /import-data — staging pipeline
 │       └── switch-db.md                   # /switch-db — database context switch
-├── departments/
-│   ├── commercial-ops/                    # Accounts, campaigns, social, events, news
+├── departments/                           # 8 departments (mirrors Monday.com)
+│   ├── commercial-leadership/             # ComLT — strategic OKRs, portfolio, KPIs
+│   │   ├── CLAUDE.md
+│   │   ├── context/
+│   │   └── skills/ (4 skills)
+│   ├── business-development/              # ComBD — pipeline, territories, inside sales
+│   │   ├── CLAUDE.md
+│   │   ├── context/
+│   │   └── skills/ (5 skills)
+│   ├── commercial-operations/             # ComOps — proposals, CRM, S&OP, pricing
+│   │   ├── CLAUDE.md
+│   │   ├── context/
+│   │   └── skills/ (5 skills)
+│   ├── marketing/                         # Marketing — campaigns, content, events
 │   │   ├── CLAUDE.md
 │   │   ├── context/
 │   │   └── skills/ (6 skills)
-│   ├── data-intelligence/                 # Pipelines, enrichment, academic, trials, drugs
+│   ├── commercial-development/            # ComDev — revenue, capacity
 │   │   ├── CLAUDE.md
 │   │   ├── context/
-│   │   └── skills/ (6 skills)
-│   ├── reporting/                         # SFDC/HubSpot, demand planning, forecasting
+│   │   └── skills/ (2 skills)
+│   ├── partnerships/                      # Client experience, strategic partners
 │   │   ├── CLAUDE.md
 │   │   ├── context/
 │   │   └── skills/ (3 skills)
-│   └── operations/                        # Monday, OKRs, contracts, data hygiene
+│   ├── operations/                        # PAD + TechOps + QA
+│   │   ├── CLAUDE.md
+│   │   ├── context/
+│   │   └── skills/ (1 skill)
+│   └── infrastructure/                    # MADE AI, data, Monday, KB
 │       ├── CLAUDE.md
 │       ├── context/
-│       └── skills/ (3 skills)
+│       └── skills/ (7 skills)
 ├── scripts/                               # Utility scripts
 ├── docs/                                  # Architecture docs
 │   └── INFRASTRUCTURE_CONSOLIDATION.md    # Migration status tracker
@@ -138,14 +158,18 @@ Full database registry: see `CLAUDE.md` → Databases section.
 
 ---
 
-## Skills (18 total)
+## Skills (33 total)
 
 | Department | Count | Skills |
 |------------|-------|--------|
-| **Commercial Ops** | 6 | Campaign Tracker, Event Data, Social Listening, News Intelligence, Content Studio, Account Import |
-| **Data Intelligence** | 6 | Academic Market, Clinical Trials, Drug Pipeline, Account Classification, Knowledge Base, Database Metrics |
-| **Reporting** | 3 | Reporting Dashboard, Demand Planning, Revenue Forecasting |
-| **Operations** | 3 | Monday Integration, Contract Management, Data Hygiene |
+| **Commercial Leadership** | 4 | OKR Management, Portfolio Dashboard, KPI Review, Strategic Planning |
+| **Business Development** | 5 | Pipeline Execution, Territory Management, Account Import, Meeting Intelligence, Inside Sales |
+| **Commercial Operations** | 5 | Proposal Excellence, CRM Integration, Demand Planning, Account Classification, Pricing Framework |
+| **Marketing** | 6 | Campaign Tracker, Content Studio, Social Listening, News Intelligence, Event Data Collection, Brand Authority |
+| **Commercial Development** | 2 | Revenue Forecasting, Capacity Management |
+| **Partnerships** | 3 | Client Experience, New Service Development, Strategic Partnerships |
+| **Operations** | 1 | Manufacturing Ops (placeholder) |
+| **Infrastructure** | 7 | Database Metrics, Knowledge Base, Monday Integration, Data Hygiene, Academic Market, Clinical Trials, Drug Pipeline |
 
 ---
 
