@@ -1,7 +1,7 @@
 # Made Scientific Infrastructure Consolidation — Reference
 
 > **Source plan:** `C:\Users\elber\.windsurf\plans\made-sci-infra-consolidation-0d833d.md`
-> **Last Updated:** March 8, 2026
+> **Last Updated:** March 10, 2026
 
 ---
 
@@ -11,9 +11,9 @@
 |-------|--------|
 | Phase 0: Discovery | ✅ Complete |
 | Phase 1: DB Migration | ✅ Complete |
-| Phase 2: App Migration & Domain | Pending |
+| Phase 2: App Migration & Domain | ✅ Complete (Mar 10) |
 | Phase 3: Sandbox Environment | Pending |
-| Phase 4: Deactivate BC Assets | Pending |
+| Phase 4: Deactivate BC Assets | ✅ Complete (Mar 10) |
 | Phase 5: Master Git & Windsurf | ✅ Complete (this repo) |
 | Phase 6: VPS, n8n, RAG | Pending |
 | Phase 7: Monday Rebuild | Pending |
@@ -62,25 +62,16 @@ BioCreative Org (post-migration):
 | `MADE-SCI/minimal-science-hub` | MADE-SCI | Production app at `madescientificai.com` | Active |
 | `MADE-SCI/made-demand-capacity-planner` | MADE-SCI | Demand/capacity planning | Active |
 | `MADE-SCI/made-reporting-ux` | MADE-SCI | Reporting dashboard (4 DBs) | Active |
-| `brian-biocreativestrategies/madescientificai2026` | BC | Old CMDO dashboard | To Archive |
+| `brian-biocreativestrategies/madescientificai2026` | BC | Old CMDO dashboard | ✅ Archived |
 | `brian-biocreativestrategies/okr-command-center` | BC | OKR tracking | Stays in BC — rebuild Phase 7 |
 
 ---
 
 ## Remaining Phases
 
-### Phase 2: Domain Transfer
-- Transfer `madescientificai.com` from CMDO Lovable app to `minimal-science-hub`
-- Connect `www.madescientificai.com`
-- Verify all pages work on production
-
 ### Phase 3: Sandbox Environment
 - Create sandbox Lovable app connected to same production DB
 - Fork `minimal-science-hub` for sandbox repo
-
-### Phase 4: Deactivate BC Assets
-- Stop CMDO DB cron jobs, add "MIGRATED" prefix
-- Update BioCreative CLAUDE.md references
 
 ### Phase 6: VPS + n8n + RAG
 - Provision Made Sci VPS (separate from BC)
