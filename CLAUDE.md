@@ -2,7 +2,7 @@
 
 > **Version:** 2.0 | **Last Updated:** March 8, 2026  
 > Route to the right department. Load only what you need.  
-> **Infra plan:** `docs/INFRASTRUCTURE_CONSOLIDATION.md`  
+> **Project tracking:** `docs/MADE_BIOCREATIVE_PROJECT_TRACKING.md`  
 > **Monday DB:** `gcrsxhrxxinryhdrweyj` — org structure, OKRs, projects
 
 ---
