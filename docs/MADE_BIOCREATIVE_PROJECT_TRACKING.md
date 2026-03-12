@@ -1,6 +1,6 @@
 # MADE<>BioCreative Project Tracking
 
-> **Last Updated:** March 11, 2026  
+> **Last Updated:** March 12, 2026  
 > **Maintained by:** Brian Elbert (BioCreative)  
 > **For:** Joseph Sinclair, Lucy Taylor, Made Scientific team  
 > **Gamma Deck:** [Made Scientific Command Center Overview](https://gamma.app/docs/Made-Scientific-Command-Center-Overview-1ewrjlm3mnnhpx1)  
@@ -28,6 +28,7 @@
 | **Clay enrichment 19-column upgrade** | Mar 11 | 19 dedicated columns on `leads`, 1,714 previously enriched leads backfilled, `process_clay_leads_enrichment()` dual-write |
 | **Campaign tracker views rewired** | Mar 11 | 8 views rewritten to use `heyreach_leads_staging` (1,309 leads), 9 campaigns visible, 5 sending personas |
 | **Push-to-Clay edge function** deployed | Mar 11 | `push-to-clay` deployed + cron every 15min, 5 leads queued — blocked on Vault secrets |
+| **Campaign contacts fix + AI message gen UX** | Mar 12 | TS interface rewritten (38 real columns), `unified_campaign_contacts` view updated with `matched_lead_id`/`headline`/`sender_name`, 1,554 contacts visible in modals, outreach button wired — **AI gen blocked on Edge Function secrets** |
 
 ### Marketing Tasks Completed
 
@@ -48,7 +49,7 @@
 |------|-------|--------|-------|
 | Campaign creation in UX — list builder + targeting by job title | Brian | In progress | Lucy wants to create campaigns herself; UI not yet added |
 | Clay auto-enrichment on campaign add | Brian | In progress | Flow: add contacts → queue for Clay → enrich → populate columns |
-| Per-contact AI message generation + review UI | Brian | In progress | Generate → edit → save → activate per contact |
+| Per-contact AI message generation + review UI | Brian | **Blocked on Joe** | UX + edge function built & deployed; contacts load; "Generate" fails without `ANTHROPIC_API_KEY` in Edge Function secrets — see Blocker #5 |
 | Inbox visibility — who responded to what campaign | Brian | In progress | EmailBison API has reply tracking; need UX component |
 | Response → Salesforce flow (engaged lead → SQL) | Brian + Lucy | Planning | Reply → mark contact as "engaged" → push to SFDC as SQL (not MQL) |
 | Nurture workflow — 3-month re-engagement | Brian | Planning | Auto re-run Clay, regenerate message, send follow-up after 3 months |
@@ -197,10 +198,11 @@ BioCreative Org (post-migration):
 | 2 | **Vault secrets** — `CLAY_API_KEY` + `CLAY_WEBHOOK_URL` in Transfer DB | Joe | Blocked |
 | 3 | **4 Clay HTTP API fields** — add to Clay table action body | Clay admin (Joe/Lucy) | Pending |
 | 4 | **RAG embedding dimension** — 512 vs 1024 mismatch, Joe to review options | Joe | Blocked |
-| 5 | **Made Sci API keys** — OpenAI + Anthropic billed to Made Sci | Joe | Pending (Phase 6) |
+| 5 | **Edge Function secrets** — `ANTHROPIC_API_KEY` (+ optional `OPENAI_API_KEY`) needed in Transfer DB Edge Function secrets **NOW** for AI message generation. Supabase Dashboard → Project Settings → Edge Functions → Secrets. 2 min task. | Joe | **Blocked 🔴** |
 | 6 | **Joe's Sandbox UX** — needs Lovable access grant | Joe | Pending |
 | 7 | **Salesforce push flow** — define MQL→SQL→pipeline gates with Joe | Joe + Lucy | Planning |
 | 8 | **Friday team meeting** — confirm attendees and cadence | Lucy + Joe | Scheduling |
+| 9 | **Transfer DB service role key** — needed for HeyReach .env on VPS AND push-to-Clay edge function | Joe | Blocked |
 
 ---
 
