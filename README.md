@@ -21,6 +21,9 @@ git clone https://github.com/MADE-SCI/minimal-science-hub.git
 git clone https://github.com/MADE-SCI/made-demand-capacity-planner.git
 
 # Reporting dashboard
+
+# Event scraper kit (Greg Shell — autonomous event scraping project)
+git clone https://github.com/brian-biocreativestrategies/-made-event-scraper-kit.git
 git clone https://github.com/MADE-SCI/made-reporting-ux.git
 ```
 
@@ -170,6 +173,14 @@ Full database registry: see `CLAUDE.md` → Databases section.
 | **Partnerships** | 3 | Client Experience, New Service Development, Strategic Partnerships |
 | **Operations** | 1 | Manufacturing Ops (placeholder) |
 | **Infrastructure** | 7 | Database Metrics, Knowledge Base, Monday Integration, Data Hygiene, Academic Market, Clinical Trials, Drug Pipeline |
+
+---
+
+## Related Repos
+
+| Repo | Purpose | Owner |
+|------|---------|-------|
+| `brian-biocreativestrategies/-made-event-scraper-kit` | Event scraping starter kit — Greg Shell building autonomous conference scraping + company matching. Private. Collaborators: Greg, Joe, Lucy, Melody. Delivered May 27 2026. | Brian (BC) → Greg (Made) |
 
 ---
 
